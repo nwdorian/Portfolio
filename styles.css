@@ -134,7 +134,7 @@ img {
 
 .skills-columns {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(5, 1fr);
   gap: 3rem;
   margin-top: 5rem;
   max-width: 1400px;
@@ -354,14 +354,33 @@ footer i {
   vertical-align: middle;
 }
 
+/* Responsiveness */
+
 @media (max-width: 61.25em) {
   h1 {
     font-size: 4.2rem;
   }
 
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0 1rem;
+    width: 100%;
+    justify-content: center;
+  }
+
   .welcome-section > p {
+    justify-content: flex-start;
     font-size: 2.2rem;
     text-align: center;
+  }
+
+  .skills-columns {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+    margin-top: 3rem;
   }
 
   .about-toggle {
@@ -381,15 +400,7 @@ footer i {
   }
 }
 
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
-
+@media (max-width: 40em) {
   .nav-list a {
     padding: 1.2rem;
     font-size: 1.8rem;
