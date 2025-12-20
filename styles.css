@@ -22,21 +22,9 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
 @media (max-width: 61.25em) {
   html {
-    font-size: 58%;
-  }
-}
-
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
+    font-size: 100%;
   }
 }
 
@@ -357,10 +345,6 @@ footer i {
 /* Responsiveness */
 
 @media (max-width: 61.25em) {
-  h1 {
-    font-size: 4.2rem;
-  }
-
   .nav {
     justify-content: center;
   }
@@ -371,9 +355,12 @@ footer i {
     justify-content: center;
   }
 
+  .nav-list a {
+    font-size: 180%;
+  }
+
   .welcome-section > p {
     justify-content: flex-start;
-    font-size: 2.2rem;
     text-align: center;
   }
 
@@ -383,12 +370,25 @@ footer i {
     margin-top: 3rem;
   }
 
-  .about-toggle {
-    margin-top: 4rem;
+  .skills-columns h3 {
+    font-size: 180%;
   }
 
-  .about-content {
-    font-size: 1.6rem;
+  .skills-list {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .skill {
+    white-space: normal;
+    padding: 0.6rem 1rem;
+    min-width: 120px;
+    font-size: 120%;
+  }
+
+  .about-toggle {
+    margin-top: 4rem;
+    font-size: 120%;
   }
 
   .projects-section {
@@ -403,15 +403,6 @@ footer i {
 @media (max-width: 40em) {
   .nav-list a {
     padding: 1.2rem;
-    font-size: 1.8rem;
-  }
-
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
-
-  .projects-section-header {
-    font-size: 4rem;
   }
 
   footer {
